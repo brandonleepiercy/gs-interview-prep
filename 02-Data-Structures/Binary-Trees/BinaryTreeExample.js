@@ -122,6 +122,7 @@ class BST {
     }
 };
 
+//TEST CASES TO VERIFY FUNCTIONALITY
 bst.add(23);
 bst.add(4);
 bst.add(99);
