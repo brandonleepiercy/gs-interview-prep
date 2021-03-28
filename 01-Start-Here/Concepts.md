@@ -40,6 +40,12 @@
         4. Polymorphism - Designing objects to share behaviors. This also means objects can override shared parent behaviors. Method overriding and method overloading are the two ways that child methods can overwrite parent methods.
 
 - ### Multi-Threading
+    - Multi-threading refers to utilizing computer architecture to execute multiple parts of a program at the same time. Improvements to CPU architecture itself (multiple-cores and increased speed) have enabled the execution of multiple functions concurrently. Typically multi-tasking can be achieved by running functions with different CPU cores at the same time, but for programs with many different functions "threads" can be created within a core. Multi-threading is the practice of using multiple threads within a core to execute two functions simultaneously.
+
+    - Using multiple threads to run concurrent functions is desirable because it's "lightweight" i.e. it frees up more cores to compute other functions at the same time. This enables a single CPU to do more, and for programs to be more complex in nature. The downside is that multi-threading is more unstable than using multiple cores alone.
+
+    - You can't program multi-threading with Javascript because the entirety of a compiled Javascript app is contained within a single thread (the reasoning might not be true I read this online, but either way JS doesn't support multi-threading)
+
 - ### Testing (Edge Cases)
 - ### The Full-Stack
 
