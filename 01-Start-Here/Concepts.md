@@ -22,7 +22,23 @@
 
     - ### RPCs (XML and JSON) (Remote Procedure Protocol)
         - RPCs are the oldest and simplest type of API used to transfer data. They differ only in that the XML-RPC defines standards on how to transfer data in an XML format whereas the JSON-RPC defines how to do the same in a JSON format. I assume these are the least secure, but quickest methods. These methods are not widely used in professional software development, likely due to security flaws.
+
 - ### OOP
+    - Object Oriented Programming is a programming paradigm that focuses on objects and classes as the building blocks of an application. The building blocks are supposed to be simple and reusable code "blueprints". A class would be an abstract blue-print, and the object would represent the specific instance of that class. For example, in an open-world video game, a class of objects could be cars. The specific object would be something like the car nearest to the player. All cars in the game are objects and all of them are extensions of the car class programmed into the game. In this example, taking an Object Oriented Programming approach to building this open world game would be to program based around the objects the game is supposed to represent on screen. Characters, vehicles, buildings, roads, etc. 
+
+    - Benefits of OOP
+        1. OOP models complex ideas with small, simple, reproducible structures.
+        2. OOP objects can be reused across programs.
+        3. Allows for class specific behavior through polymorphism.
+        4. Easier to debug, features broken typically lead to classes etc. (Is an entire class functioning improperly/ is it just the object).
+        5. Secures information through encapsulation (separation of concerns).
+
+    - Four Pillars of OOP
+        1. Inheritance - Child classes/objects inherit data and methods from the parent classes. This is a foundationational to the reusability of OOP and why it results in much less code.
+        2. Encapsulation - The object contains all the information neccesary for it, and nothing more. This provides clean separation of concerns and makes sure the user can see enough, not too much.
+        3. Abstraction - Reducing complicated operations into simple devices by the time it gets to the user. For example, a car drives by combustion, gas/air management physics etc. But controls are simplified into gas, brakes, steering wheel. Only the neccesities are available and they are simplfied.
+        4. Polymorphism - Designing objects to share behaviors. This also means objects can override shared parent behaviors. Method overriding and method overloading are the two ways that child methods can overwrite parent methods.
+
 - ### Multi-Threading
 - ### Testing (Edge Cases)
 - ### The Full-Stack
