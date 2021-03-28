@@ -12,3 +12,15 @@ A binary search tree is a specific type of tree that always stays sorted because
 
 - ### BST Implementation
     BSTs are not a native function of Javascript, this means the programmer has to program every facet of a BST using Javascript classes. To begin building a BST, break down the parts that comprise a BST mentally. There are really only two parts to the BST, the Node class (contains the data and the pointers) and the BST class (contains the methods/properties that an application would use to call data, like finding the max etc).
+
+- ### BST Basic Operations
+    1. Create a tree
+    2. Insert a node
+    3. Search for a node 
+    4. Delete a node
+    5. Inorder traversal
+    6. Preorder traversal
+    7. Postorder traversal
+
+- ### Breadth First vs Depth First
+    A breadth first search goes down each row of the tree like layers in a cake, and depth first searches go down individual branches. 
