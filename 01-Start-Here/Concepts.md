@@ -44,13 +44,15 @@
 
     - Using multiple threads to run concurrent functions is desirable because it's "lightweight" i.e. it frees up more cores to compute other functions at the same time. This enables a single CPU to do more, and for programs to be more complex in nature. The downside is that multi-threading is more unstable than using multiple cores alone.
 
-    - You can't program multi-threading with Javascript because the entirety of a compiled Javascript app is contained within a single thread (the reasoning might not be true I read this online, but either way JS doesn't support multi-threading)
+    - You can't program multi-threading with Javascript because the entirety of a compiled Javascript app is contained within a single thread (the reasoning might not be true I read this online, but either way JS doesn't support multi-threading).
 
 - ### Testing (Edge Cases)
-- ### The Full-Stack
+    - Testing edge cases simply refers to testing whether an algorithm can handle extreme cases. The most typical example of an 'extreme case' would be seeing whether or not an algorithm can handle processing a dataset with either a really small number, or small number of items, or a huge number of items. Making sure your algorithm can satisfy edge cases is how you make sure your code is complete. Seeing how long it takes your algorithm to complete with a massive data-set is also a great way to test potential real world latency in production.
 
 ## Data Structures
 - ### Space/Time Complexity (Memory and Big O)
+    - You need to understand what the Memory and Big O complexity of your algorith is to be successful. Memory complexity refers to how much space your algorithm takes up. This is primary influenced by how many variables and functions an algorithm needs to be complete. Big O complexity refers to the run-time of the worst possible scenario. (If you're traversing a list, how long would it take it get to the last item in the list?)
+
 - ### [Arrays](../02-Data-Structures/Arrays/Arrays.md)
 - ### [Hash-Tables](../02-Data-Structures/Hash-Tables/Hash-Tables.md)
 - ### [Hash-Maps](../02-Data-Structures/Hash-Maps/Hash-Maps.md)
