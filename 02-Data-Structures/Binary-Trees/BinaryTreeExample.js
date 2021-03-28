@@ -120,6 +120,50 @@ class BST {
         }
         this.root = removeNode(this.root, data); //Calling the function to initialize the recursive loop
     }
+    //Different types of traversals to print the nodes in different orders
+
+    //Depth-first In-Order traversal
+    //left, root, right
+    dfsInOrder() {
+        let result = [];
+        const traverse = (node) => {
+            if (node.left) traverse(node.left);
+
+            result.push(node.value);
+
+            if (node.right) traverse(node.right);
+        };
+        return result;
+    }
+
+    //Depth-first Pre-Order traversal
+    //root, left, right
+    dfsPreOrder() {
+        let result = [];
+        const traverse = (node) => {
+            result.push(node.value);
+            if (node.left) traverse(node.left);
+            if (node.right) traverse(node.right);
+        };
+        return result;
+    }
+
+    //Depth-first Post-Order traversal
+    //left, right, root
+    dfsPostOrder() {
+        let result = [];
+        const traverse = (node) => {
+            if (node.left) traverse (node.left);
+            if (node.right) traverse (node.right);
+            result.push(node.value);
+        }
+        return result;
+    }
+
+    //Breadth-first (level by level)
+    bfs() {
+
+    }
 };
 
 //TEST CASES TO VERIFY FUNCTIONALITY
