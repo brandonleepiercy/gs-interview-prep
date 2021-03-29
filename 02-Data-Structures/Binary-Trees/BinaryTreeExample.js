@@ -48,14 +48,14 @@ class BST {
             current = current.left; //Adjust the current node to the left of the current node (recursion)
         }
         return current.data; //If current.left IS null, you are kicked out of the while loop, then return current.data
-    };
+    }
     findMax() { //Mirror of findMin();
         let current = this.root;
         while (current.right !== null) {
             current = current.right;
         }
         return current.data;
-    };
+    }
     find(data) { //Finding a specific node based on matching data
         let current = this.root; //Start at root
         while (current.data !== data) { //While the data of the current node does not equal the data being searched for
@@ -120,53 +120,10 @@ class BST {
         }
         this.root = removeNode(this.root, data); //Calling the function to initialize the recursive loop
     }
-    //Different types of traversals to print the nodes in different orders
-
-    //Depth-first In-Order traversal
-    //left, root, right
-    dfsInOrder() {
-        let result = [];
-        const traverse = (node) => {
-            if (node.left) traverse(node.left);
-
-            result.push(node.value);
-
-            if (node.right) traverse(node.right);
-        };
-        return result;
-    }
-
-    //Depth-first Pre-Order traversal
-    //root, left, right
-    dfsPreOrder() {
-        let result = [];
-        const traverse = (node) => {
-            result.push(node.value);
-            if (node.left) traverse(node.left);
-            if (node.right) traverse(node.right);
-        };
-        return result;
-    }
-
-    //Depth-first Post-Order traversal
-    //left, right, root
-    dfsPostOrder() {
-        let result = [];
-        const traverse = (node) => {
-            if (node.left) traverse (node.left);
-            if (node.right) traverse (node.right);
-            result.push(node.value);
-        }
-        return result;
-    }
-
-    //Breadth-first (level by level)
-    bfs() {
-
-    }
 };
 
 //TEST CASES TO VERIFY FUNCTIONALITY
+const bst = new BST();
 bst.add(23);
 bst.add(4);
 bst.add(99);
