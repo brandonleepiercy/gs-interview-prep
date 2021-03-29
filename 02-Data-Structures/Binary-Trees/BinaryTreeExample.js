@@ -121,13 +121,13 @@ class BST {
         this.root = removeNode(this.root, data); //Calling the function to initialize the recursive loop
     }
     isBalanced() { //Is the tree balanced or not
-        return (this.findMinHeight() >= this.findMaxHeight() - 1)
+        return (this.findMinHeight() >= this.findMaxHeight() - 1) //The tree is balanced if the min height is within 1 of the max height
     }
     findMinHeight(node = this.root) { //Find the height from the root to the lowest level with a node that does not have two children
-        if (node == null) {
+        if (node == null) { //Default null check
             return -1;
         };
-        let left = this.findMinHeight(node.left);
+        let left = this.findMinHeight(node.left); 
         let right = this.findMinHeight(node.right);
         if (left < right) {
             return left + 1;
