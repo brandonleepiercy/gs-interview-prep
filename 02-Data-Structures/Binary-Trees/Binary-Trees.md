@@ -24,3 +24,6 @@ A binary search tree is a specific type of tree that always stays sorted because
 
 - ### Breadth First vs Depth First
     A breadth first search goes down each row of the tree like layers in a cake, and depth first searches go down individual branches. 
+
+- ### BIG O Complexity of Operations in a BST
+- All operations are based around traversals, and so for each operation, the worst case scenario would involve traversing all the way through the tree until the last element, then performing the operation. This means the big O time is linear, O(n), where n is the number of data points in the data set.

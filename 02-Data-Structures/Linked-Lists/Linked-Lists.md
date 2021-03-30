@@ -14,3 +14,8 @@
 1. Singly Linked Lists - each node contains only one pointer to the next node
 2. Doubly Linked Lists - each node continas two pointers, one to the next node and one to the previous node
 3. Circular Linked Lists - a variation where the last node points to the beginning or any node that comes before it to form a loop
+
+- ## Big O Complexity of Linked List Operations
+- Access Element: O(n)
+- Insert or Remove from beginning: O(1)
+- Insert or Remover from the end: O(n)

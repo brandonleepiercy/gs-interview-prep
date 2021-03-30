@@ -7,3 +7,7 @@
 - Push
 - Pop
 - Peek
+
+## Big O
+- All the operations are O(1), constant.
+You either remove from the front or back, nothing is really computed you dont have to traverse to remove from the end. Peek could be O(n) worst case scenario.

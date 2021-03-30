@@ -40,3 +40,6 @@
     - This makes it faster to iterate over a node's edges, and it makes it more space efficient especially in a situation with many nodes and few connections.
 
     ![Adjacency List](list.png)
+
+- ### Big O Complexity of Graph Operations
+![Big O of Graphs](graphs-big-o.png)
