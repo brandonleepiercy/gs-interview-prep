@@ -12,7 +12,7 @@ function hashString (string) {
 //Constructor class for the hashmap 
 class HashMap {
     //Constructor that composese the map with the native JS map function
-    constructor(hashMap) {
+    constructor() {
         this.hashMap = new Map();
     };
     //Sets the item by passing the key value through the hash function to produce an index where the value resides at within the table
