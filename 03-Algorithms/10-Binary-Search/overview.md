@@ -1,0 +1,2 @@
+## Binary Search Overview
+- Binary search itself is the function by which you would search for a given value through a search tree. It refers to how when you search for a number in a sorted list, sorting it from largest to smallest or the other way around, allows the computer to search, compare the value to the found value, and eliminate half of the possible remaining values because it's either higher, lower, or found. 
